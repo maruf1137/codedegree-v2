@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Janna LT';
+    src: url('JannaLT-Bold.woff2') format('woff2'),
+        url('JannaLT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

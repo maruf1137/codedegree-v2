@@ -1,0 +1,65 @@
+.nav {
+	padding: 0.8rem 0.5rem;
+	border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+
+	.menu {
+		height: 2.4rem;
+		width: 2.4rem;
+		background-color: transparent;
+
+		.icon {
+			@include img-size;
+		}
+	}
+
+	&__list {
+		gap: 2.4rem;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 60%;
+			width: 1px;
+			background-color: $color-secondary;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+	}
+	&__item {
+	}
+	&__link {
+	}
+
+	.btn-subscribe {
+		background-color: $color-primary;
+		padding: 1.2rem 2.4rem;
+		color: $color-white;
+	}
+
+	.profile {
+		gap: 1rem;
+		align-items: center;
+
+		&__photo {
+			height: 4.3rem;
+			width: 4.3rem;
+			border-radius: 50%;
+			background-color: transparent;
+		}
+	}
+
+	.btn-down-arrow {
+		height: 2rem;
+		width: 4rem;
+		background-color: transparent;
+		padding: 0;
+
+		.icon {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.sidebar {
+	background-color: $color-secondary;
+	color: $color-white;
+	padding: 4rem 6rem;
+	min-height: 100vh;
+
+	&__logo {
+		height: 6.4rem;
+		width: 6.4rem;
+
+		img {
+			@include img-size;
+		}
+	}
+
+	&__list {
+		gap: 1.5rem;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		padding: 1.2rem;
+
+		.icon {
+			height: 2rem;
+			width: 2rem;
+			fill: $color-white;
+			transition: all 0.3s;
+		}
+
+		span {
+			color: $color-white;
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			.icon {
+				fill: $color-primary;
+			}
+
+			span {
+				color: $color-primary;
+			}
+		}
+	}
+
+	.active {
+		.icon {
+			fill: $color-primary;
+		}
+
+		span {
+			color: $color-primary;
+		}
+	}
+}
