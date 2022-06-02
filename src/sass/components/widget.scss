@@ -2,7 +2,9 @@
 	width: 26rem;
 	// border: 1px solid #333;
 
-	.community {
+	.community,
+	.active-user,
+	.project {
 		padding: 2.4rem 1.4rem;
 		background: #ffffff;
 		box-shadow: 0px 4px 10px rgba(31, 31, 31, 0.1);
@@ -19,6 +21,29 @@
 			img {
 				width: 2rem;
 				height: 1.5rem;
+			}
+		}
+	}
+
+	.active-user {
+		&__item {
+			img {
+				height: 2.4rem;
+				width: 2.4rem;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	.project {
+		&__item {
+		}
+		&__img {
+			width: 100%;
+			height: auto;
+
+			img {
+				@include img-size;
 			}
 		}
 	}
