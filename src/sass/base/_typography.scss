@@ -17,9 +17,18 @@ h2.heading {
 	line-height: 120%;
 }
 h3.heading {
-	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 150%;
 	color: $color-primary;
+
+	@media only screen and (max-width: $tab-port) {
+		font-size: 1.4rem;
+		line-height: 146%;
+	}
+	@media only screen and (max-width: $mbl-land) {
+		font-size: 1.8rem;
+		line-height: 150%;
+	}
 }
 
 h4.heading {
@@ -44,6 +53,10 @@ a:visited {
 	font-weight: 400;
 	text-decoration: none;
 	color: $color-black;
+
+	@media only screen and (max-width: $laptop-port) {
+		font-size: 1.6rem;
+	}
 }
 
 // Typography utils

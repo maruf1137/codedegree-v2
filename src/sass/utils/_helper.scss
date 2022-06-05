@@ -57,14 +57,14 @@
 
 .mbl-land-hide {
 	@media only screen and (max-width: $mbl-land) {
-		display: none;
+		display: none !important;
 	}
 }
 .mbl-land-show {
-	display: none;
+	display: none !important;
 
 	@media only screen and (max-width: $mbl-land) {
-		display: block;
+		display: block !important;
 	}
 }
 
@@ -193,6 +193,42 @@
 }
 .mr-10 {
 	margin-right: 10rem !important;
+}
+
+// margin right auto
+.mr-auto {
+	margin-right: auto;
+}
+// margin left
+.ml-1 {
+	margin-left: 1rem !important;
+}
+.ml-2 {
+	margin-left: 2rem !important;
+}
+.ml-3 {
+	margin-left: 3rem !important;
+}
+.ml-4 {
+	margin-left: 4rem !important;
+}
+.ml-5 {
+	margin-left: 5rem !important;
+}
+.ml-6 {
+	margin-left: 6rem !important;
+}
+.ml-7 {
+	margin-left: 7rem !important;
+}
+.ml-8 {
+	margin-left: 8rem !important;
+}
+.ml-9 {
+	margin-left: 9rem !important;
+}
+.ml-10 {
+	margin-left: 10rem !important;
 }
 
 // margin right auto

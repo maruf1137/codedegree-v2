@@ -1,6 +1,36 @@
 .nav {
 	padding: 0.8rem 0.5rem;
 	border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+	width: 100%;
+
+	@media only screen and (max-width: $tab-land) {
+		justify-content: space-between;
+		align-items: center;
+	}
+	@media only screen and (max-width: $tab-land) {
+		margin-bottom: 2rem !important;
+	}
+
+	.logo {
+		height: 6.4rem;
+		width: 6.4rem;
+
+		img {
+			@include img-size;
+		}
+	}
+
+	&-content {
+		width: 100%;
+	}
+
+	.mbl-bar {
+		background-color: transparent;
+		.icon {
+			height: 4.3rem;
+			width: 4.6rem;
+		}
+	}
 
 	.menu {
 		height: 2.4rem;
@@ -21,16 +51,12 @@
 			display: block;
 			height: 60%;
 			width: 1px;
-			background-color: $color-secondary;
+			background-color: rgba(31, 31, 31, 0.506);
 			position: absolute;
 			top: 50%;
 			right: 0;
 			transform: translateY(-50%);
 		}
-	}
-	&__item {
-	}
-	&__link {
 	}
 
 	.btn-subscribe {

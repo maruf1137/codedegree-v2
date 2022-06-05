@@ -1,0 +1,42 @@
+.forum {
+	.display {
+		&__btns {
+			// background-color: $color-white;
+			border: 0px solid rgba(12, 187, 134, 0.1);
+			// border-radius: 0.5rem;
+			// padding: 0.4rem;
+			width: auto;
+			// gap: 0.2rem;
+			// text-transform: capitalize;
+
+			.btn {
+				background: transparent;
+				width: auto;
+				color: rgba(31, 31, 31, 0.5);
+			}
+
+			.active {
+				color: rgb(31, 31, 31);
+			}
+		}
+
+		.content-footer {
+			@media only screen and (max-width: $tab-land) {
+				flex-direction: column;
+				align-items: start !important;
+				gap: 1rem;
+			}
+
+			&-item {
+				gap: 2.4rem;
+			}
+
+			.user-name {
+				padding-right: 0;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+}

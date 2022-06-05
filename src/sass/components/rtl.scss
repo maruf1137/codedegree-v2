@@ -1,0 +1,40 @@
+.rtl {
+	.nav__list::after {
+		content: '';
+		display: block;
+		height: 60%;
+		width: 1px;
+		background-color: rgba(31, 31, 31, 0.506);
+		position: absolute;
+		top: 50%;
+		right: 102%;
+		transform: translateY(-50%);
+	}
+
+	.nav .menu {
+		height: 2.4rem;
+		width: 2.4rem;
+		background-color: transparent;
+		transform: rotate(180deg);
+	}
+
+	.display .main-content .user-details .text {
+		margin-left: 0.5rem;
+	}
+
+	.display .main-content .user-details .user-name {
+		padding-left: 1.5rem;
+	}
+
+	.dropdown__btn .down-arrow {
+		right: 98%;
+		transform: translateY(-50%) rotate(96deg);
+	}
+	.show-dropdown .down-arrow {
+		transform: translateY(-50%) rotate(0);
+	}
+
+	.display .main-content .user-details .user-name {
+		padding-right: 0;
+	}
+}
