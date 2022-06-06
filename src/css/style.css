@@ -1351,13 +1351,13 @@ button {
 .mbl-sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   background: #1f1f1f;
   color: #fff;
   height: 100vh;
   width: 50%;
   z-index: 2;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: all 0.5s ease;
 }
 @media only screen and (max-width: 35.9375em) {
@@ -1388,7 +1388,7 @@ button {
 .mbl-sidebar .close-mbl-sidebar {
   position: absolute;
   top: 3rem;
-  left: 3rem;
+  right: 3rem;
   background-color: transparent;
 }
 .mbl-sidebar .close-mbl-sidebar .icon {
@@ -1634,6 +1634,7 @@ button {
 .display .main-content .project__details,
 .display .main-content .news__details {
   padding: 1.6rem;
+  direction: rtl;
 }
 .display .main-content .project__details h3,
 .display .main-content .news__details h3 {

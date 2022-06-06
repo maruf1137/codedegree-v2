@@ -65,13 +65,13 @@
 .mbl-sidebar {
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	background: $color-secondary;
 	color: #fff;
 	height: 100vh;
 	width: 50%;
 	z-index: 2;
-	transform: translateX(100%);
+	transform: translateX(-100%);
 	transition: all 0.5s ease;
 
 	@media only screen and (max-width: $mbl-land) {
@@ -106,7 +106,7 @@
 	.close-mbl-sidebar {
 		position: absolute;
 		top: 3rem;
-		left: 3rem;
+		right: 3rem;
 		background-color: transparent;
 		.icon {
 			height: 4.3rem;
